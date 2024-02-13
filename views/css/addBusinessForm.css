@@ -1,0 +1,92 @@
+#addBusinessForm {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-height: 615px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    z-index: 1000;
+    display: none;
+}
+
+#addBusinessForm:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+#addBusinessForm form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    width: 330px;
+    max-height: 615px;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+/* #addBusinessForm h3 {
+    text-align: center;
+    color: #000;
+} */
+
+/* #addBusinessForm label {
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+    padding-right: 25px;
+    margin-top: 10px;
+} */
+
+#addBusinessForm input {
+    display: inline-block;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+}
+
+/* #addBusinessForm form::-webkit-scrollbar {
+    width: 3px;
+}
+
+#addBusinessForm form::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+#addBusinessForm form::-webkit-scrollbar-track {
+    background-color: #fff;
+} */
+
+#addBusinessBtn,
+#cancelAddBusinessBtn {
+    width: calc(50% - 7px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#addBusinessBtn {
+    width: calc(50% - 10px);
+    padding: 10px;
+    margin-right: 5px;
+    background-color: #2c2b2b;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+#cancelAddBusinessBtn {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 5px;
+}
+

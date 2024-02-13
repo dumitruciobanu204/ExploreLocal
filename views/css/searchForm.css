@@ -1,0 +1,112 @@
+#searchForm {
+    position: absolute;
+    top: 75px;
+    left: 20px;
+    background-color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: auto;
+    max-height: 87vh;
+    border-radius: 8px;
+    box-sizing: border-box;
+    z-index: 1000;
+}
+
+#searchForm:hover {
+    background-color: rgba(255, 255, 255, 1);
+    transition: 0.3s;
+}
+
+#searchForm form {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 330px;
+    box-sizing: border-box;
+}
+
+#searchResults {
+    margin-left: 15px; 
+    max-height: 62vh;
+    overflow: scroll;   
+}
+
+#searchResults::-webkit-scrollbar {
+    width: 3px;
+}
+
+#searchResults::-webkit-scrollbar-thumb {
+    background-color: #333;
+}
+
+#searchResults::-webkit-scrollbar-track {
+    background-color: #fff;
+}
+
+#regionSearch {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    color: #000;
+    background-color: #fff;
+
+}
+
+#searchByRegionBtn,
+#cancelSearchBtn {
+    width: calc(50% - 7px);
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#searchByRegionBtn {
+    background-color: #2c2b2b;
+    color: #fff;
+    margin-right: 5px;
+}
+
+#cancelSearchBtn {
+    background-color: #dc3545;
+    color: #fff;
+    margin-left: 5px;
+}
+
+#searchResults {
+    margin-top: 20px;
+    color: #000;
+}
+
+#searchResults p {
+    margin: 5px 0;
+}
+
+#searchResults ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#searchResults li {
+    margin-bottom: 10px;
+}
+
+#searchResults button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+#searchResults {
+    display: none;
+}

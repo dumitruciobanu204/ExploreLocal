@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script defer src="js/searchByRegion.js"></script>
+    <script defer src="js/map.js"></script>
+    <script defer src="js/addBusiness.js"></script>
+    <script defer src="js/login.js"></script>
+
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/searchForm.css">
+    <link rel="stylesheet" href="css/map.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/addBusinessForm.css">
+    <link rel="stylesheet" href="css/loginForm.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    
+    <title>Business Search</title>
+</head>
+
+<body>
+
+    <nav>
+        <div id="loggedUser" style="display: none;">Logged in as: <span id="loggedInUserName"></span></div>
+        <button id="login-link" type="button" onclick="openOverlay()">Log In</button>
+        <button id="logout-link" type="button" style="display: none;" onclick="logout()">Log out</button>  
+     
+
+    </nav>
+
+    <div class="overlay" id="overlay">
+        <div class="login-box">
+            <form onsubmit="login(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+
+                <button type="submit">Login</button>
+            </form>
+            <span class="close-btn" onclick="closeOverlay()">×</span>
+        </div>
+    </div>
+
+    <div id ="map"></div>
+
+    <div id="searchForm">
+        <form>
+            <input type="text" id="regionSearch" placeholder="Enter region">
+
+            <input type="button" onclick="searchByRegion()" value="Search" id="searchByRegionBtn">
+            <button type="button" onclick="cancelSearch()" id="cancelSearchBtn">Cancel</button>
+
+        </form>
+
+        <div id="searchResults"></div>
+    </div>
+
+
+    <div id="addBusinessForm">
+        <form>
+            <p>
+                <input type="text" id="name" placeholder="Title">
+            </p>
+    
+            <p>
+                <input type="text" id="type" placeholder="Type">
+            </p>
+    
+            <p>
+                <input type="text" id="country" placeholder="Country">
+            </p>
+    
+            <p>
+                <input type="text" id="region" placeholder="Region">
+            </p>
+    
+            <p>
+                <input type="text" id="longitude" value="Permanent" disabled>
+            </p>
+    
+            <p>
+                <input type="text" id="latitude" value="Permanent Latitude" disabled>
+            </p>
+    
+            <p>
+                <input type="text" id="description" placeholder="Description">
+            </p>
+    
+            <p>
+                <input type="text" id="recommendations" placeholder="Recommendations">
+            </p>
+    
+            <button type="button" onclick="addLocalBusiness()" id="addBusinessBtn">Add Business</button>
+            <button type="button" onclick="cancelAddBusiness()" id="cancelAddBusinessBtn">Cancel</button>
+        </form>
+    </div>
+    
+
+
+</body>
+
+</html>

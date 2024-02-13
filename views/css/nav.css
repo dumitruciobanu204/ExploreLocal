@@ -1,0 +1,32 @@
+nav {
+    background-color: #333;
+    overflow: hidden;
+    height: 55px;
+    width: 100%;
+    align-items: center;
+    display: flex;
+}
+
+#logout-link,
+#login-link {
+    text-decoration: none;
+    padding: 5px 20px;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    margin-right: 20px;
+    margin-left: auto;
+    cursor: pointer;
+}
+
+#logout-link,
+#login-link:hover {
+    background-color: #fff;
+}
+
+#loggedUser {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-left: 20px;
+}

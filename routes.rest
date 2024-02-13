@@ -1,0 +1,20 @@
+###
+GET http://localhost:3000/localbusiness/test_region
+
+###
+POST http://localhost:3000/localbusiness/add/
+Content-Type: application/json
+
+{    
+    "name": "test_name",
+    "type": "test_type",
+    "country": "test_country",
+    "region": "test_region",
+    "lon": "test_lon",
+    "lat": "test_lat",
+    "description": "test_description",
+    "recommendations": "test_recommendations"
+}
+
+### 
+POST http://localhost:3000/localbusiness/362/recommend     
